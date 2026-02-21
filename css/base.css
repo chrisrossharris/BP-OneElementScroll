@@ -161,8 +161,8 @@ main {
   grid-template-areas: 'title' 'wrap' 'sponsor';
   justify-items: start;
   align-items: start;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 900;
 
 }
 
@@ -293,6 +293,12 @@ main {
   font-weight: 400;
   position: relative;
   max-width: 500px;
+}
+
+.content__text--list{
+  line-height: 1.1;
+  max-width: none;
+  font-size: clamp(2rem,12vw,6rem);
 }
 
 .content__text--large {
