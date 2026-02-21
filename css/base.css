@@ -6,21 +6,24 @@
 
 :root {
   font-size: 16px;
-  --color-text: #503717;
-  --color-bg: rgb(234 234 234);
-  --color-link: #b19162;
-  --color-link-hover: #e1c093;
-  --color-title: #000;
+--color-text: #efe7dc;              /* soft ivory (not harsh white) */
+  --color-bg: #070605;                /* almost-black, warm undertone */
+  --color-link: #c9a86a;              /* restrained gold */
+  --color-link-hover: #e5c790;        /* lifted gold on hover */
+  --color-title: #ffffff;             /* clean headline contrast */
   --page-padding: 2rem;
-  --gradient-1: rgb(234 234 234 / 80%);
-  --gradient-2: rgb(229 134 27 / 30%);
+
+  --gradient-1: rgb(7 6 5 / 95%);
+  --gradient-2: rgb(229 134 27 / 20%);
 }
 
 body {
   margin: 0;
   color: var(--color-text);
   background-color: var(--color-bg);
-  font-family: "capitana", sans-serif;
+  font-family: "cormorant-garamond", serif;
+  font-weight: 400;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100vw;
@@ -31,7 +34,7 @@ body {
 }
 
 .font-alt {
-  font-family: "harpagan", sans-serif;
+  font-family: "cormorant-garamond", serif;
   font-weight: 500;
 }
 
@@ -142,7 +145,10 @@ main {
 .unbutton:focus {
   outline: none;
 }
-
+.font-cap {
+  text-transform: uppercase;
+  font-size: 18px;
+}
 .frame {
   position: fixed;
   margin: 10px;
@@ -155,12 +161,12 @@ main {
   grid-template-areas: 'title' 'wrap' 'sponsor';
   justify-items: start;
   align-items: start;
+  font-size: 14px;
+  font-weight: 700;
+
 }
 
-.font-cap {
-  text-transform: uppercase;
-  font-size: 10px;
-}
+
 
 .frame__title {
   grid-area: title;
@@ -218,7 +224,8 @@ main {
 }
 
 .content--blend {
-  mix-blend-mode: overlay;
+  mix-blend-mode: screen;
+  opacity: 0.7;
 }
 
 .content--center {
@@ -263,7 +270,7 @@ main {
   line-height: .9;
   margin: 0;
   text-transform: uppercase;
-  font-size: clamp(3rem,19vw,8rem);
+  font-size: clamp(2.1rem, 13.3vw, 5.6rem);
   max-width: 1000px;
   color: var(--color-title);
 }
